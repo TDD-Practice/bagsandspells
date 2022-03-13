@@ -29,6 +29,7 @@ bag_with_metals_category = ['Copper', 'Copper', 'Copper', 'Gold']
 bag_with_no_category = []
 bag_with_weapons_category = []
 bag_with_no_category = []
+
 {
 "clothes": ["Leather", "Linen", "Silk", "Wool"],
 "herbs": ["Cherry Blossom", "Marigold", "Rose", "Seaweed"],
