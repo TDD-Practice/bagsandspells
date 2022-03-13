@@ -10,7 +10,8 @@ def item_is_added_to_backpack():
 def test_item_is_added_to_Bag1_if_Backpack_is_full():
     for i in range(8):
         Backpack.add_item("copper")
-    Bag1.add_item("wood")
-    assert "wood" not in Bag1.items
+    Backpack.add_item("wood")
+    assert "wood" in Bag1.items
+    assert "wood" not in Backpack.items
     assert len(Backpack.items) == 8
 
