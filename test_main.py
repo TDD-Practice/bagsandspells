@@ -2,21 +2,18 @@ import pytest
 
 from main import Backpack, Bag1, Bag2, Bag3, Bag4, reset_all_bags
 
-def empty_Backpack():
-    reset_all_bags()
-    
 def fill_Backpack(item, count):
-    empty_Backpack()
+    reset_all_bags()
     for i in range(count):
         Backpack.add_item(item)
 
 def test_item_is_added_to_Backpack():
-    empty_Backpack()
+    fill_Backpack("", 0)
     Backpack.add_item("copper")
     assert "copper" in Backpack.items
 
 def item_is_removed_from_Backpack():
-    empty_Backpack()
+    fill_Backpack("", 0)
     Backpack.add_item("copper")
     Backpack.remove_item("copper")
     assert "copper" not in Backpack.items
